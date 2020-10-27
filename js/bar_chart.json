@@ -1,28 +1,27 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "data": { "url": "https://raw.githubusercontent.com/nxuu0002/Assignment2/main/js/case%20by%20age%20group%20and%20sex.csv"},
+  "data": { "url": "https://raw.githubusercontent.com/nxuu0002/Assignment2/main/data/case%20by%20age%20group%20and%20sex.csv"},
   "transform": [
-    {"filter": "datum.year == 2000"},
-    {"calculate": "datum.sex == 2 ? 'Female' : 'Male'", "as": "Gender"}
+    {"calculate": "datum.Sex == 2 ? 'Male':'Female'", "as": "gender"}
   ],
-  "width": {"step": 12},
+  "width": {"step": 20},
   "mark": "bar",
   "encoding": {
     "column": {
-      "field": "Age", "type": "ordinal", "spacing": 10
+      "field": "Age", "type": "ordinal", "spacing": 9
     },
     "y": {
-      "aggregate": "sum", "field": "Total",
-      "title": "population",
+      "aggregate": "sum", "field": "Population",
+      "title": "Case",
       "axis": {"grid": false}
     },
     "x": {
-      "field": "Gender",
+      "field": "Sex",
       "axis": {"title": ""}
     },
     "color": {
-      "field": "Gender",
-      "scale": {"range": ["#fa9fb5", "#9ecae1"]}
+      "field": "Sex",
+      "scale": {"range": ["#fa9fb5", "#2b8cbe"]}
     }
   },
   "config": {
