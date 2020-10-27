@@ -117,9 +117,27 @@
           },
           "legend": {"format": ".1s"}
         },
+        
         "color": {
           "field": "State",
-          "type": "nominal"
+          "type": "nominal",
+          "scale": {"domain":["Australian Capital Territory",
+                              "New South Wales",
+                              "Queensland",
+                              "South Australia",
+                              "Tasmania",
+                              "Victoria",
+                              "Western Australia",
+                              "Northern Territory"],
+                    "range":["",
+                             "#3182bd",
+                             "#7fcdbb",
+                             "#addd8e",
+                             "#99d8c9",
+                             "#253494",
+                             "#7bccc4",
+                             "#f7fcb9"]}
+                    
           },
         
         "opacity": {
