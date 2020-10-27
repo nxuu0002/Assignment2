@@ -7,7 +7,7 @@
     "url": "https://raw.githubusercontent.com/nxuu0002/Assignment2/main/data/case%20by%20date%20and%20state.csv"
   },
   "params": [
-        {
+    {
       "name": "State_selection",
       "bind": {
         "input": "select",
@@ -21,7 +21,7 @@
           "Western Australia",
           "Northern Territory"
         ],
-        "labels":[
+        "labels": [
           "Show All",
           "New South Wales",
           "Queensland",
@@ -33,8 +33,7 @@
         ],
         "name": "State Selection: "
       }
-    }
-    ,
+    },
     {
       "name": "Date_selection",
       "bind": {
@@ -52,7 +51,7 @@
           "Sep",
           "Oct"
         ],
-        "labels":[
+        "labels": [
           "Show All",
           "January",
           "February",
@@ -92,7 +91,20 @@
       "type": "nominal",
       "title":"Month",
       "axis": {"tickCount": 6},
-      "scale":{"domain":["Oct","Sep","Aug","Jul","Jun","May","Apr","Mar","Feb","Jan"]}
+      "scale": {
+        "domain": [
+          "Oct",
+          "Sep",
+          "Aug",
+          "Jul",
+          "Jun",
+          "May",
+          "Apr",
+          "Mar",
+          "Feb",
+          "Jan"
+        ]
+      }
     }
   },
   "layer": [
@@ -116,27 +128,32 @@
           },
           "legend": {"format": ".1s"}
         },
-        
         "color": {
           "field": "State",
           "type": "nominal",
-          "scale": {"domain":["New South Wales",
-                              "Queensland",
-                              "South Australia",
-                              "Tasmania",
-                              "Victoria",
-                              "Western Australia",
-                              "Northern Territory"],
-                    "range":["#3182bd",
-                             "#7fcdbb",
-                             "#addd8e",
-                             "#99d8c9",
-                             "#253494",
-                             "#7bccc4",
-                             "#f7fcb9"]}
-                    
-          },
-        
+          "scale": {
+            "domain": [
+              "Australian Capital Territory",
+              "New South Wales",
+              "Queensland",
+              "South Australia",
+              "Tasmania",
+              "Victoria",
+              "Western Australia",
+              "Northern Territory"
+            ],
+            "range": [
+              "",
+              "#3182bd",
+              "#7fcdbb",
+              "#addd8e",
+              "#99d8c9",
+              "#253494",
+              "#7bccc4",
+              "#f7fcb9"
+            ]
+          }
+        },
         "opacity": {
           "condition": {"selection": "date_highlight", "value": 0.7},
           "value": 0.2
@@ -152,7 +169,6 @@
         ]
       }
     },
-  
     {
       "mark": {
         "type": "text",
@@ -167,7 +183,7 @@
         "color": {"value": "black"},
         "opacity": {
           "condition": {
-            "test": "datum['State'] == 'Tasmania' || datum['State'] == 'New South Wales'"         
+            "test": "datum['State'] == 'Tasmania' || datum['State'] == 'New South Wales'"
           },
           "value": 0
         },
