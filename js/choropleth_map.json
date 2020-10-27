@@ -17,15 +17,18 @@
           "url": "https://raw.githubusercontent.com/nxuu0002/Assignment2/main/data/case_count_by_state.csv"
         },
         "key": "State",
-        "fields": ["Confirmed_Case"]
+        "fields": ["Confirmed_Case","Population"]
+        
       }
-    }   
+    },  
+    {"calculate": "datum.Confirmed_Case / datum.Population", "as": "Cases"},
+    {"filter":"datum.Cases>0"}
   ],
   "projection": {"type": "equirectangular"},
   "mark": {"type": "geoshape"},
   "encoding": {
     "color": {
-      "field": "Confirmed_Case",
+      "field": "Cases",
       "type": "quantitative",
       "scale": {"type": "log"}
     },
