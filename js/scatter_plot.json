@@ -1,0 +1,171 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 800,
+  "height": 600,
+  "title": "COVID-19 Cases change by State in Australia",
+  "data": {
+    "url": "https://raw.githubusercontent.com/nxuu0002/multiple_charts/main/data/case%20by%20date%20and%20state.csv"
+  },
+  "params": [
+        {
+      "name": "State_selection",
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Australian Capital Territory",
+          "New South Wales",
+          "Queensland",
+          "South Australia",
+          "Tasmania",
+          "Victoria",
+          "Western Australia",
+          "Northern Territory"
+        ],
+        "labels":[
+          "Show All",
+          "Australian Capital Territory",
+          "New South Wales",
+          "Queensland",
+          "South Australia",
+          "Tasmania",
+          "Victoria",
+          "Western Australia",
+          "Northern Territory"
+        ],
+        "name": "State Selection: "
+      }
+    }
+    ,
+    {
+      "name": "Date_selection",
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr",
+          "May",
+          "Jun",
+          "Jul",
+          "Aug",
+          "Sep",
+          "Oct"
+        ],
+        "labels":[
+          "Show All",
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October"
+        ],
+        "name": "Month Selection: "
+      }
+    }
+  ],
+  "transform": [
+    {"filter": "datum.Case > 0"},
+    {"filter": "datum.Population > 0"},
+    {"filter": "Date_selection == null || datum.Date == Date_selection"},
+    {"filter": "State_selection == null || datum.State == State_selection"},
+    {
+      "calculate": "datum.Case/datum.Population * 10000",
+      "as": "Cases per 10000 Population"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "Case",
+      "type": "quantitative",
+      "title": "Cases",
+      "axis": {"tickCount": 6},
+      "scale": {"type": "log", "domain": [1, 1000000]}
+    },
+    "y": {
+      "field": "Date",
+      "type": "nominal",
+      "axis": {"tickCount": 6},
+      "scale":{"domain":["Oct","Sep","Aug","Jul","Jun","May","Apr","Mar","Feb","Jan"]}
+    }
+  },
+  "layer": [
+    {
+      "selection": {
+        "date_highlight": {
+          "type": "multi",
+          "fields": ["Date"],
+          "bind": "legend"
+        }
+      },
+      "mark": "circle",
+      "encoding": {
+        "size": {
+          "field": "Case",
+          "type": "quantitative",
+          "scale": {
+            "type": "threshold",
+            "domain": [50, 500, 5000, 50000, 100000],
+            "range": [30, 90, 190, 400, 700, 1200]
+          },
+          "legend": {"format": ".1s"}
+        },
+        "color": {
+          "field": "State",
+          "type": "nominal"
+          },
+        
+        "opacity": {
+          "condition": {"selection": "date_highlight", "value": 0.7},
+          "value": 0.2
+        },
+        "tooltip": [
+          {"field": "State", "type": "nominal"},
+          {"field": "Case", "type": "quantitative", "format": ","},
+          {
+            "field": "Cases per 10000 Population",
+            "type": "quantitative",
+            "format": ".2f"
+          }
+        ]
+      }
+    },
+  
+    {
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "middle",
+        "dx": -12,
+        "fontSize": 11.5,
+        "fontStyle": "italic"
+      },
+      "encoding": {
+        "text": {"field": "State", "type": "nominal"},
+        "color": {"value": "black"},
+        "opacity": {
+          "condition": {
+            "test": "datum['State'] == 'Tasmania' || datum['State'] == 'New South Wales'"         
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {"field": "State", "type": "nominal"},
+          {"field": "Case", "type": "quantitative", "format": ","},
+          {
+            "field": "Cases per 10000 Population",
+            "type": "quantitative",
+            "format": ".2f"
+          }
+        ]
+      }
+    }
+  ]
+}
