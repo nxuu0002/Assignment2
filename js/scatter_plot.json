@@ -90,7 +90,7 @@
       "scale": {"type": "log", "domain": [1, 1000000]}
     },
     "y": {
-      "field": "Date",
+      "field": "Month",
       "type": "nominal",
       "axis": {"tickCount": 6},
       "scale":{"domain":["Oct","Sep","Aug","Jul","Jun","May","Apr","Mar","Feb","Jan"]}
