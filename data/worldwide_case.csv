@@ -1,0 +1,13 @@
+continent,total_tests,test_result,population
+Asia,12117465462,negative,11165401288
+Asia,12117465462,positive,952064174
+North America,12691722790,negative,11718941443
+North America,12691722790,positive,972781347
+Europe,12212747566,negative,11588468627
+Europe,12212747566,positive,624278939
+Africa,1147819132,negative,998572891
+Africa,1147819132,positive,149246241
+Oceania,723207198,negative,719320172
+Oceania,723207198,positive,3887026
+South America,782963995,negative,15481613
+South America,782963995,positive,767482382
