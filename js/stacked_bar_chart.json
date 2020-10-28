@@ -1,10 +1,21 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "data": {"url": "data/barley.json"},
+  "data": {"url": "https://raw.githubusercontent.com/nxuu0002/Assignment2/main/data/worldwide_case.csv"},
+  "width":"600",
+  "height":"400",
   "mark": "bar",
+
   "encoding": {
-    "x": {"aggregate": "sum", "field": "yield"},
-    "y": {"field": "variety"},
-    "color": {"field": "site"}
+    "x": {"aggregate":"sum","field": "population"},
+    "y": {"field": "continent"},
+    "color": {"field": "test_result"},
+    "tooltip":[
+      {"field":"continent","type":"nominal"},
+      {"field":"total_tests","type": "quantitative"},
+      {"field":"test_result","type":"nominal"},
+      {"field":"population","type":"quantitative"}
+      
+    ]
+
   }
 }
