@@ -133,7 +133,6 @@
           "type": "nominal",
           "scale": {
             "domain": [
-              "Australian Capital Territory",
               "New South Wales",
               "Queensland",
               "South Australia",
@@ -143,7 +142,6 @@
               "Northern Territory"
             ],
             "range": [
-              "",
               "#3182bd",
               "#7fcdbb",
               "#addd8e",
