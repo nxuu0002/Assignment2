@@ -4,6 +4,13 @@
   "width":"600",
   "height":"400",
   "mark": "bar",
+  "transform": [{
+        "fields": ["Confirmed_Case","Population"]
+        
+    },  
+    {"calculate": "datum.population / datum.total_tests ", "as": "percentage"},
+    {"filter":"datum.population>0"}
+  ],
 
   "encoding": {
     "x": {"aggregate":"sum","field": "population"},
@@ -13,9 +20,11 @@
       {"field":"continent","type":"nominal"},
       {"field":"total_tests","type": "quantitative"},
       {"field":"test_result","type":"nominal"},
-      {"field":"population","type":"quantitative"}
+      {"field":"population","type":"quantitative"},
+      {"field":"percentage","type":"quantitative"}
       
     ]
+
 
   }
 }
