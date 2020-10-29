@@ -14,9 +14,12 @@
       "aggregate": "sum",
       "field": "Population",
       "title": "Case",
-      "axis": {"grid": false}
+      "axis": {"grid": false,
+              "labelFontSize":"12"}
     },
-    "x": {"field": "Sex", "axis": {"title": ""}},
+    "x": {"field": "Sex",
+          "axis": {"title": "",
+                   "labelFontSize":"12"}},
     "color": {"field": "Sex", "scale": {"range": ["#fa9fb5", "#2b8cbe"]}},
     "tooltip": [
       {"field": "Age", "type": "nominal"},
