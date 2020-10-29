@@ -10,8 +10,8 @@
   "encoding": {
     "x": {
       "timeUnit":"month",
-      "field": "Month",
-      "type": "nominal",
+      "field": "Date",
+      "type": "temporal",
       "axis": {
         "labelAngle":0,
         "labelFontSize":12}      
@@ -25,7 +25,45 @@
 
       "tooltip":[
         {"field":"State","type":"nominal"},
+        {"field":"Date","type":"temporal"},
+        
         {"field":"Cumulative_Case_Count","type":"quantitative"}]
         
+  },
+    "layer":[{
+    "selection": {
+    "month_highlight":{
+    "type":"multi",
+    "field":["Date"],
+    "bind":"legend"
+    }
+  },
+  "mark":"line",
+  "encoding":{
+    "opacity": {
+      "condition": {"selection": "month_highlight"}
+      }, 
+    "tooltip":[
+      {"field":"State","type":"nominal"},
+      {"field":"Date","type": "temporal"},
+      {"field":"Cumulative_Case_Count","type":"quantitative"}]
+      }
+  },
+    {
+      "mark":{
+      "type":"text",
+      "baseline":"left",
+      "align":"left",
+      "fontSize":"13"},
+      "encoding":{
+        "text":{"field":"Cumulative_Case_Count"},
+        "color":{"value":"black"}, 
+     "tooltip":[
+      {"field":"State","type":"nominal"},
+      {"field":"Date","type": "temporal"},
+      {"field":"Cumulative_Case_Count","type":"quantitative"} 
+      ]
+    }
   }
+]
 }
