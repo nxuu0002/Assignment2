@@ -84,7 +84,7 @@
       "type": "quantitative",
       "title": "Cases",
       "axis": {"tickCount": 6,
-              "labelFontSize":"12"},
+              "labelFontSize":12},
       "scale": {"type": "log", "domain": [1, 1000000]}
     },
     "y": {
@@ -92,19 +92,19 @@
       "type": "nominal",
       "title":"Month",
       "axis": {"tickCount": 6,
-               "labelFontSize":"12"},
+               "labelFontSize":12},
       "scale": {
         "domain": [
-          "October",
-          "September",
-          "August",
-          "July",
-          "June",
+          "Oct",
+          "Sep",
+          "Aug",
+          "Jul",
+          "Jun",
           "May",
-          "April",
-          "March",
-          "February",
-          "January"
+          "Apr",
+          "Mar",
+          "Feb",
+          "Jan"
         ]
       }
     }
@@ -175,7 +175,7 @@
         "align": "right",
         "baseline": "middle",
         "dx": -12,
-        "fontSize": 11.5,
+        "fontSize": 12,
         "fontStyle": "italic"
       },
       "encoding": {
