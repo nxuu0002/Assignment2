@@ -83,26 +83,28 @@
       "field": "Case",
       "type": "quantitative",
       "title": "Cases",
-      "axis": {"tickCount": 6},
+      "axis": {"tickCount": 6,
+              "labelFontSize":"12"},
       "scale": {"type": "log", "domain": [1, 1000000]}
     },
     "y": {
       "field": "Date",
       "type": "nominal",
       "title":"Month",
-      "axis": {"tickCount": 6},
+      "axis": {"tickCount": 6,
+               "labelFontSize":"12"},
       "scale": {
         "domain": [
-          "Oct",
-          "Sep",
-          "Aug",
-          "Jul",
-          "Jun",
+          "October",
+          "September",
+          "August",
+          "July",
+          "June",
           "May",
-          "Apr",
-          "Mar",
-          "Feb",
-          "Jan"
+          "April",
+          "March",
+          "February",
+          "January"
         ]
       }
     }
