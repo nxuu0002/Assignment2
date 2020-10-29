@@ -1,0 +1,18 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width":"600",
+  "height":"300",
+  "data": {"url": "https://raw.githubusercontent.com/nxuu0002/Assignment2/main/data/victoria_case.csv"},
+  "mark": "line",
+
+  "encoding": {
+    "x": {
+      "field": "Month",
+      "type": "nominal"
+      },
+    "y": {
+      "field": "Cumulative_Case_Count",
+      "type":"quantitative"
+      }
+  }
+}
