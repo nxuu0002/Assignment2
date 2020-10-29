@@ -4,30 +4,28 @@
   "height":300,
   "data": {"url": "https://raw.githubusercontent.com/nxuu0002/Assignment2/main/data/victoria_case.csv"},
     "mark": {
-      "type": "line",
-      "interpolate": "monotone"
+      "type": "line"
     },
 
   "encoding": {
     "x": {
+      "timeUnit":"month",
       "field": "Month",
       "type": "nominal",
       "axis": {
         "labelAngle":0,
-        "labelFontSize":12},
-        "scale":{
-          "domain":["January","February","March","April","May","June","July","August","September","October"]}
-        
+        "labelFontSize":12}      
       },
     "y": {
-      "aggregate":"max",
       "field": "Cumulative_Case_Count",
       "type":"quantitative",
       "axis": {
         "labelFontSize":12}
       },
+
       "tooltip":[
         {"field":"State","type":"nominal"},
         {"field":"Cumulative_Case_Count","type":"quantitative"}]
+        
   }
 }
