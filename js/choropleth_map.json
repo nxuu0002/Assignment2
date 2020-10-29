@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "COVID-19 case count by state in AU",
-  "width": 800,
-  "height": 600,
+  "title": "COVID-19 Case Count by State in Australia",
+  "width": 500,
+  "height": 300,
   "data": {
     "url": "https://raw.githubusercontent.com/nxuu0002/Assignment2/main/js/STE_2016_AUST.json",
     "format": {
@@ -21,20 +21,21 @@
         
       }
     },  
-    {"calculate": "datum.Confirmed_Case / datum.Population", "as": "Cases"},
+    {"calculate": "datum.Confirmed_Case / datum.Population", "as": "Cases_by_Population"},
     {"filter":"datum.Cases>0"}
   ],
   "projection": {"type": "equirectangular"},
   "mark": {"type": "geoshape"},
   "encoding": {
     "color": {
-      "field": "Cases",
+      "field": "Cases_by_Population",
       "type": "quantitative",
       "scale": {"type": "log"}
     },
     "tooltip": [
       {"field": "properties.STE_NAME16", "type": "nominal", "title": "State"},
-      {"field": "Confirmed_Case", "type": "quantitative"}
+      {"field": "Confirmed_Case", "type": "quantitative"},
+      {"field": "Cases_by_Population","type":"quantitative"}
     ]
   }
 }
