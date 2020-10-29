@@ -1,11 +1,11 @@
 State,Month,Cumulative_Case_Count,Cumulative_deaths,Recovered_umulative.
-VIC,31-Jan-20,3, , 
-VIC,27-Feb-20,4, , 
-VIC,28-Mar-20,917, ,291
-VIC,29-Apr-20,1361, ,1291
+VIC,31-January-20,3, , 
+VIC,27-February-20,4, , 
+VIC,28-March-20,917, ,291
+VIC,29-April-20,1361, ,1291
 VIC,31-May-20,1649, ,1557
-VIC,30-Jun-20,2159, ,1816
-VIC,31-Jul-20,10577,113,4479
-VIC,31-Aug-20,19080,565,15814
-VIC,30-Sep-20,20171,798, 
-VIC,31-Oct-20,20295, ,19229
+VIC,30-June-20,2159, ,1816
+VIC,31-July-20,10577,113,4479
+VIC,31-August-20,19080,565,15814
+VIC,30-September-20,20171,798, 
+VIC,31-October-20,20295, ,19229
