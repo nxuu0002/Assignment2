@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "data": {"url": "https://raw.githubusercontent.com/nxuu0002/Assignment2/main/data/worldwide_case.csv"},
-  "width":450,
-  "height":250,
+  "width":550,
+  "height":350,
   "mark": "bar",
   "transform": [{
         "fields": ["Confirmed_Case","Population"]
