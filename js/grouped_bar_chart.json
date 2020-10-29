@@ -19,7 +19,7 @@
     },
     "x": {"field": "Sex",
           "axis": {"title": "",
-                   "labelFontSize":"12"}},
+                   "labelFontSize":"12","labelAngle":-45}},
     "color": {"field": "Sex", "scale": {"range": ["#fa9fb5", "#2b8cbe"]}},
     "tooltip": [
       {"field": "Age", "type": "nominal"},
