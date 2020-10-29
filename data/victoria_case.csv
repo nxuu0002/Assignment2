@@ -1,4 +1,4 @@
-State,Date,Cumulative.case.count,Cumulative.deaths,Tests.conducted..negative.,Tests.conducted..total.,Hospitalisations..count.,Intensive.care..count.,Ventilator.usage..count.,Recovered..cumulative.
+State,Date,Case_count,Cumulative.deaths,Tests.conducted..negative.,Tests.conducted..total.,Hospitalisations..count.,Intensive.care..count.,Ventilator.usage..count.,Recovered..cumulative.
 VIC,25/01/2020,1, , , , , ,, 
 VIC,29/01/2020,2, , , , , ,, 
 VIC,30/01/2020,3, , ,79, , ,, 
