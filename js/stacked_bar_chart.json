@@ -13,8 +13,8 @@
   ],
 
   "encoding": {
-    "x": {"aggregate":"sum","field": "population"},
-    "y": {"field": "continent"},
+    "x": {"aggregate":"sum","field": "population","labelFontSize":"12"},
+    "y": {"field": "continent","labelFontSize":"12"},
     "color": {"field": "test_result"},
     "tooltip":[
       {"field":"continent","type":"nominal"},
