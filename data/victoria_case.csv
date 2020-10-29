@@ -1,4 +1,4 @@
-State,Month,Cumulative_Case_Count,Cumulative_deaths,Recovered_umulative.
+State,Date,Cumulative_Case_Count,Cumulative_deaths,Recovered_umulative.
 VIC,31-January-20,3, , 
 VIC,27-February-20,4, , 
 VIC,28-March-20,917, ,291
