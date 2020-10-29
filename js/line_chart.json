@@ -1,18 +1,33 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width":"600",
-  "height":"300",
+  "width":550,
+  "height":300,
   "data": {"url": "https://raw.githubusercontent.com/nxuu0002/Assignment2/main/data/victoria_case.csv"},
-  "mark": "line",
+    "mark": {
+      "type": "line",
+      "interpolate": "monotone"
+    },
 
   "encoding": {
     "x": {
       "field": "Month",
-      "type": "nominal"
+      "type": "nominal",
+      "axis": {
+        "labelAngle":0,
+        "labelFontSize":12},
+        "scale":{
+          "domain":["January","February","March","April","May","June","July","August","September","October"]}
+        
       },
     "y": {
+      "aggregate":"max",
       "field": "Cumulative_Case_Count",
-      "type":"quantitative"
-      }
+      "type":"quantitative",
+      "axis": {
+        "labelFontSize":12}
+      },
+      "tooltip":[
+        {"field":"State","type":"nominal"},
+        {"field":"Cumulative_Case_Count","type":"quantitative"}]
   }
 }
