@@ -20,6 +20,7 @@
     "color": {"field": "Sex", "scale": {"range": ["#fa9fb5", "#2b8cbe"]}},
     "tooltip": [
       {"field": "Age", "type": "nominal"},
+      {"field": "Sex", "type": "nominal"},
       {"field": "Population", "type": "quantitative", "format": ","}]
   },
 
