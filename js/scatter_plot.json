@@ -1,5 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "background":"#f7f7f7",
   "width": 550,
   "height": 350,
   "data": {
@@ -199,5 +200,10 @@
         ]
       }
     }
-  ]
+  ],
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    }
+  }
 }
