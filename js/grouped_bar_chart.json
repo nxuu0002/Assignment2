@@ -1,10 +1,11 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width":55,
   "data": {
     "url": "https://raw.githubusercontent.com/nxuu0002/Assignment2/main/data/case%20by%20age%20group%20and%20sex.csv"
   },
   "background": "#f0f8ff",
-  "width":55,
+  
   "height":350,
   "transform": [
     {"calculate": "datum.Sex == 2 ? 'Male':'Female'", "as": "gender"}
