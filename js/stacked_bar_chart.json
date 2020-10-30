@@ -14,9 +14,14 @@
 
   "encoding": {
     "x": {"aggregate":"sum","field": "population",
-          "axis":{"labelFontSize":12}},
+          "axis":{
+            "tickCount": 6,
+            "labelFontSize":12}},
     "y": {"field": "continent",
-         "axis":{"labelFontSize":12}},
+         "axis":{
+           "tickCount": 6,
+           "labelFontSize":12
+         }},
     "color": {"field": "test_result"},
     "tooltip":[
       {"field":"continent","type":"nominal"},
