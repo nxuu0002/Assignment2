@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "data": {"url": "https://raw.githubusercontent.com/nxuu0002/Assignment2/main/data/worldwide_case.csv"},
-  "width":550,
+  "width":600,
   "height":350,
   "mark": "bar",
   "transform": [{
@@ -16,11 +16,13 @@
     "x": {"aggregate":"sum","field": "population",
           "axis":{
             "tickCount": 6,
-            "labelFontSize":12}},
+            "labelFontSize":12,
+            "titleFontSize":14}},
     "y": {"field": "continent",
          "axis":{
            "tickCount": 6,
-           "labelFontSize":12
+           "labelFontSize":12,
+           "titleFontSize":14
          }},
     "color": {"field": "test_result"},
     "tooltip":[
