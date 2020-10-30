@@ -185,7 +185,7 @@
         "color": {"value": "black"},
         "opacity": {
           "condition": {
-            "test": "datum['State'] == 'Tasmania' || datum['State'] == 'Victoria'"
+            "test": "datum['State'] == 'Tasmania' && || datum['Date']=='Jan' || datum['State'] == 'Victoria' && datum['Date']=='May'"
           },
           "value": 0
         },
