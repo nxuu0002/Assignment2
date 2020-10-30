@@ -3,7 +3,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/nxuu0002/Assignment2/main/data/case%20by%20age%20group%20and%20sex.csv"
   },
-  "width":200,
+  "width":100,
   "height":200,
   "transform": [
     {"calculate": "datum.Sex == 2 ? 'Male':'Female'", "as": "gender"}
@@ -17,11 +17,14 @@
       "field": "Population",
       "title": "Case",
       "axis": {"grid": false,
-              "labelFontSize":"12"}
+              "labelFontSize":"12",
+              "titleFontSize":14}
     },
     "x": {"field": "Sex",
           "axis": {"title": "",
-                   "labelFontSize":"12","labelAngle":-45}},
+                   "labelFontSize":"12",
+                   "labelAngle":-45,
+                   "titleFontSize":14}},
     "color": {"field": "Sex", "scale": {"range": ["#fa9fb5", "#2b8cbe"]}},
     "tooltip": [
       {"field": "Age", "type": "nominal"},
