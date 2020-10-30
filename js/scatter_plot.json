@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width": 650,
+  "width": 700,
   "height": 400,
   "data": {
     "url": "https://raw.githubusercontent.com/nxuu0002/Assignment2/main/data/case%20by%20date%20and%20state.csv"
