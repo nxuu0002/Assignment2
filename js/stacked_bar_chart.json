@@ -5,7 +5,6 @@
   
   "width": 550,
   "height":350,
-  "background":"#f7f7f7",
   "mark": "bar",
   "transform": [{
         "fields": ["Confirmed_Case","Population"]
