@@ -25,23 +25,25 @@
        background-color: white;
      }
      .page{
-       width: 1100px;    
+       width: 500px;    
        background-color: lightblue;   
        margin: auto;
        padding: 50px;
-       padding-top: 35px;
+       padding-top: 30px;
     }
     .vis-container{
       width: 80%;
+      text-align: center;
     }
     .description h2, h1{
       margin-top:0px;
+      text-align: center;
     }
     .description-right {
-      padding-left: 30px;
+      padding-left: 50px;
     }
     .description-left{
-      padding-right: 30px;
+      padding-right: 50px;
     }
     .pure-g{
       margin-bottom: 30px;
@@ -59,7 +61,7 @@
     <div class="pure-g">
       <div class="pure-u-1-1">
         <h1>COVID-19 in Australia</h1>
-        <h4>COVID-19 becomes a poupular issue recently, because it is closely related to everyone's health and daily life. This visualisation is a summary of COVID-19 situation in Australia from January to October.</h4>
+        <h3>COVID-19 becomes a poupular issue recently, because it is closely related to everyone's health and daily life. This visualisation is a summary of COVID-19 situation in Australia from January to October.</h3>
       </div>
     </div>
   <!-- end pure grid group -->
@@ -68,13 +70,14 @@
     <div class="pure-g">
         <div class="pure-u-1-3">
           <div class="description description-left">
-            <h2>COVID-19 Positive Rate WorldWide</h2>
-            <p></p>
+            <h2>Positive Rate WorldWide</h2>
+            <div class="pure-u-2-3">
+              <div id="vis1" class="vis-container"></div>
+            </div>
+            <p>The stacked bar chart above shows the postive rate in Africa, Asia, Europe, North America and Oceania. It is clear to see that South America has the highest positive rate among test results. 98% of the tests results appear to be positive. Besides, Oceania appears to have the lowest positive rate among the seven continents, the number of people who shows a positive is less tha 1% of all people who participated in the test.</p>
           </div>
         </div>
-        <div class="pure-u-2-3">
-          <div id="vis1" class="vis-container"></div>
-        </div>
+
     </div>
     <!-- end pure grid group -->
 
@@ -82,39 +85,43 @@
         <div class="pure-u-1-3">
           <div class="description description-left">
             <h2>Case Count by State in Australia</h2>
+            <div class="pure-u-2-3">
+              <div id="vis2" class="vis-container"></div>
+            </div>
             <p>The chart on the right is a choropleth map shows count of case from January to October by states. From the chart, the most serve area is Victoria, which has  . Besides, Northern Territory has the least people of having COVID-19. </p>
           </div>
         </div>
-        <div class="pure-u-2-3">
-          <div id="vis2" class="vis-container"></div>
-        </div>
+
     </div>
     <!-- end pure grid group -->
+   
+    <div class="pure-g">
+        <div class="pure-u-1-3">
+          <div class="description description-left">
+            <h2>Case Count by Age Group and Gender</h2>
+            <div class="pure-u-2-3">
+              <div id="vis4" class="vis-container"></div>
+            </div>
+            <p>The grouped bar chart on the right shows . </p>
+          </div>
+        </div>
+
+    </div>
+    <!-- end pure grid group -->
+   
    
     <!-- pure grid group -->
     <div class="pure-g">
         <div class="pure-u-1-3">
           <div class="description description-left">
             <h2>Case Change by State from January to October in Australia</h2>
-            <p>The scatter plot on the right dementrates . </p>
+            <div class="pure-u-2-3">
+              <div id="vis3" class="vis-container"></div>
+            </div>
+            <p>The scatter plot on the right dementrates################################################################################################## . </p>
           </div>
         </div>
-        <div class="pure-u-2-3">
-          <div id="vis3" class="vis-container"></div>
-        </div>
-    </div>
-    <!-- end pure grid group -->
 
-    <div class="pure-g">
-        <div class="pure-u-1-3">
-          <div class="description description-left">
-            <h2>Case Count by Age Group and Gender</h2>
-            <p>The grouped bar chart on the right shows . </p>
-          </div>
-        </div>
-        <div class="pure-u-2-3">
-          <div id="vis4" class="vis-container"></div>
-        </div>
     </div>
     <!-- end pure grid group -->
 
