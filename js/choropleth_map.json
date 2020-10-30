@@ -35,6 +35,7 @@
       {"field": "properties.STE_NAME16", "type": "nominal", "title": "State"},
       {"field": "Confirmed_Case", "type": "quantitative"},
       {"field": "Population","type":"quantitative"}
-    ]
+    ],
+    "titleFontSize":12
   }
 }
