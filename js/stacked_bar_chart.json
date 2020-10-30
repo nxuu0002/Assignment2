@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "data": {"url": "https://raw.githubusercontent.com/nxuu0002/Assignment2/main/data/worldwide_case.csv"},
-  "background": "#F0F8FF",
+  "background": "#f0f8ff",
   "width": 550,
   "height":350,
   "background":"#f7f7f7",
