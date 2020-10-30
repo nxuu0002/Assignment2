@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": "COVID-19 Case Count by State in Australia",
-  "width": 550,
-  "height": 350,
+  "width": 700,
+  "height": 500,
   "data": {
     "url": "https://raw.githubusercontent.com/nxuu0002/Assignment2/main/js/STE_2016_AUST.json",
     "format": {
