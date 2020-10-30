@@ -15,14 +15,16 @@
       "axis": {
         "tickCount": 6,
         "labelAngle":0,
-        "labelFontSize":12}      
+        "labelFontSize":12,
+        "titleFontSize":14}      
       },
     "y": {
       "field": "Cumulative_Case_Count",
       "type":"quantitative",
       "axis": {
         "tickCount": 6,
-        "labelFontSize":12}
+        "labelFontSize":12,
+        "titleFontSize":14}
       },
 
       "tooltip":[
