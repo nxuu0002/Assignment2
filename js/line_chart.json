@@ -13,6 +13,7 @@
       "field": "Date",
       "type": "temporal",
       "axis": {
+        "tickCount": 6,
         "labelAngle":0,
         "labelFontSize":12}      
       },
@@ -20,6 +21,7 @@
       "field": "Cumulative_Case_Count",
       "type":"quantitative",
       "axis": {
+        "tickCount": 6,
         "labelFontSize":12}
       },
 
