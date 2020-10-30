@@ -24,10 +24,11 @@
     }
      body{
        background-color: lightblue;
+       opacity: 0.3;
      }
      .page{
        width: 1000px;    
-       background-color: white;   
+  
        margin: auto;
        padding: 50px;
        padding-top: 30px;
@@ -40,17 +41,23 @@
     .description h3, h1{
       margin-top:0px;
       text-align: center;
+      background-color: gray;
+      opacity: 0.3;
     }
-    .description-center {
-      text-align: center;
-}
+    
+    .description-color {
+      background-color: yellow;
+      opacity: 0.3;
+    }
+    
     .pure-g{
       margin-bottom: 20px;
       text-align: center;
     }
     .small-font{
       font-size: 15px;
-      
+      background-color: gray;
+      opacity: 0.3;
     }
   </style>
 </head>
@@ -70,12 +77,13 @@
     <!-- pure grid group -->
     <div class="pure-g">
         <div class="pure-u-1-1">
-          <h2>Positive Rate WorldWide</h2>
-          <div class="pure-u-2-3">
-            <div id="vis1" class="vis-container"></div>
+          <div class="description description-color">
+            <h2>Positive Rate WorldWide</h2>
+            <div class="pure-u-2-3">
+              <div id="vis1" class="vis-container"></div>
+            </div>
+            <p>The stacked bar chart above shows the postive rate in Africa, Asia, Europe, North America, Oceania and South America. It is clear to see that <b> South America has the highest positive rate among test results </b>. <b> 98% </b>of the tests results appear to be positive. Besides, <b>Oceania appears to have the lowest positive rate </b> among the seven continents, the number of people who shows a positive is less than <b>1%</b> of all people who participated in the test.</p>
           </div>
-          <p>The stacked bar chart above shows the postive rate in Africa, Asia, Europe, North America, Oceania and South America. It is clear to see that <b> South America has the highest positive rate among test results </b>. <b> 98% </b>of the tests results appear to be positive. Besides, <b>Oceania appears to have the lowest positive rate </b> among the seven continents, the number of people who shows a positive is less than <b>1%</b> of all people who participated in the test.</p>
-          
         </div>
 
     </div>
@@ -83,7 +91,7 @@
 
     <div class="pure-g">
         <div class="pure-u-1-1">
-          <div class="description description-center">
+          <div class="description description-color">
             <h2>Case Count by State in Australia</h2>
             <div class="pure-u-2-3">
               <div id="vis2" class="vis-container"></div>
@@ -97,7 +105,7 @@
    
     <div class="pure-g">
         <div class="pure-u-1-1">
-          <div class="description description-center">
+          <div class="description description-color">
             <h2>Case Count by Age Group and Gender in Australia</h2>
             <div class="pure-u-2-3">
               <div id="vis4" class="vis-container"></div>
@@ -113,7 +121,7 @@
     <!-- pure grid group -->
     <div class="pure-g">
         <div class="pure-u-1-1">
-          <div class="description description-center">
+          <div class="description description-color">
             <h2>Case Change by State from January to October in Australia</h2>
             <div class="pure-u-2-3">
               <div id="vis3" class="vis-container"></div>
@@ -128,7 +136,7 @@
     <!-- pure grid group -->
     <div class="pure-g">
         <div class="pure-u-1-1">
-          <div class="description-center">
+          <div class="description description-color">
             <h2>Cumulative Case Count In Victoria</h2>
             <div class="pure-u-2-3">
               <div id="vis5" class="vis-container"></div>
