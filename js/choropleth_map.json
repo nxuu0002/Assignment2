@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width": 600,
+  "width": 580,
   "height": 450,
   "data": {
     "url": "https://raw.githubusercontent.com/nxuu0002/Assignment2/main/js/STE_2016_AUST.json",
