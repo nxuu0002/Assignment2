@@ -185,7 +185,7 @@
         "color": {"value": "black"},
         "opacity": {
           "condition": {
-            "test": "datum['State'] == 'Tasmania' && || datum['Date']=='Jan' || datum['State'] == 'Victoria' && datum['Date']=='May'"
+            "test": "datum['State'] == 'Northern Territory' && datum['Date']=='Mar'|| datum['State'] == 'Victoria' && datum['Date']=='Oct' || datum['State'] == 'New South Wales' && datum['Date']=='Sep' || datum['State'] == 'Western Australia' && datum['Date']=='Apr'"
           },
           "value": 0
         },
