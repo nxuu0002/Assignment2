@@ -3,7 +3,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/nxuu0002/Assignment2/main/data/case%20by%20age%20group%20and%20sex.csv"
   },
-  "background": "#F0F8FF",
+  "background": "#f0f8ff",
   "width":55,
   "height":350,
   "transform": [
