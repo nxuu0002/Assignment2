@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width":800,
+  "width":760,
   "height":300,
   "data": {"url": "https://raw.githubusercontent.com/nxuu0002/Assignment2/main/data/victoria_case.csv"},
     "mark": {
