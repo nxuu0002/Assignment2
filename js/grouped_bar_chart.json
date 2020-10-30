@@ -3,8 +3,8 @@
   "data": {
     "url": "https://raw.githubusercontent.com/nxuu0002/Assignment2/main/data/case%20by%20age%20group%20and%20sex.csv"
   },
-  "width":350,
-  "height":300,
+  "width":300,
+  "height":200,
   "transform": [
     {"calculate": "datum.Sex == 2 ? 'Male':'Female'", "as": "gender"}
   ],
