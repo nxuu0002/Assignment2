@@ -74,8 +74,8 @@
     {"filter": "Date_selection == null || datum.Date == Date_selection"},
     {"filter": "State_selection == null || datum.State == State_selection"},
     {
-      "calculate": "datum.Case/datum.Population * 10000",
-      "as": "Cases per 10000 Population"
+      "calculate": "datum.Case/datum.Population * 10",
+      "as": "Cases per 10 People"
     }
   ],
   "encoding": {
@@ -164,9 +164,9 @@
           {"field": "State", "type": "nominal"},
           {"field": "Case", "type": "quantitative", "format": ","},
           {
-            "field": "Cases per 10000 Population",
+            "field": "Cases per 10 People",
             "type": "quantitative",
-            "format": ".2f"
+            "format": ".3f"
           }
         ]
       }
@@ -193,9 +193,9 @@
           {"field": "State", "type": "nominal"},
           {"field": "Case", "type": "quantitative", "format": ","},
           {
-            "field": "Cases per 10000 Population",
+            "field": "Cases per 10 People",
             "type": "quantitative",
-            "format": ".2f"
+            "format": ".3f"
           }
         ]
       }
