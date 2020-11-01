@@ -22,14 +22,14 @@
       }
     },  
     {"calculate": "datum.Confirmed_Case / datum.Population", "as":"Cases"},
-    {"calculate": "datum.Cases*1000", "as" :"Cases per 1000 popolation"},
+    {"calculate": "datum.Cases*10", "as" :"Cases per 10 people"},
     {"filter":"datum.Cases>0"}
   ],
   "projection": {"type": "equirectangular"},
   "mark": {"type": "geoshape"},
   "encoding": {
     "color": {
-      "field": "Cases per 1000 popolation",
+      "field": "Cases per 10 people",
       "type": "quantitative",
       "scale": {"type": "log"}
     },
@@ -37,12 +37,14 @@
       {"field": "properties.STE_NAME16", "type": "nominal", "title": "State"},
       {"field": "Confirmed_Case", "type": "quantitative"},
       {"field": "Population","type":"quantitative"},
-      {"field": "Cases per 1000 popolation","type":"quantitative"}
+      {"field": "Cases per 10 people","type":"quantitative"}
     ]
   },
+
   "config": {
     "view": {
       "stroke": "transparent"
-    }
+    },
+    "numberFormat": ".2f"
   }
 }
