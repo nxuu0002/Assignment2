@@ -36,9 +36,59 @@
       
     ]
   },
+   "layer":[
+    {
+     "mark":"bar"
+      },
+    {
+      "mark":{
+      "type":"text",
+      "baseline":"left",
+      "dx":33,
+      "align":"left",
+      "fontSize":13},
+      "encoding":{
+        "text":{"field":"test_result","type": "nominal"},
+
+        "color":{"value":"black"}, 
+        "opacity":{"condition":{
+          "test": "datum['continent']=='Oceania' && datum['test_result']=='positive' || datum['continent']=='South America' && datum['test_result']=='negative'"
+        },
+        "value":0
+        },
+
+     "tooltip":[
+      {"field":"continent","type":"nominal"},
+      {"field":"test_result","type": "nominal"},
+      {"field":"population","type":"quantitative"} 
+      ]
+    }},
+    {"layer":[ 
+      {
+        "mark": {
+          "type": "text",
+          "dy": 15,
+          "dx":33,
+          "align":"left",
+          "fontSize":13
+        },
+        "encoding": {
+          "text": {"field": "percentage", "type": "quantitative"},
+          "color":{"value":"black"},
+           "opacity":{"condition":{
+          "test": "datum['continent']=='Oceania' && datum['test_result']=='positive' || datum['continent']=='South America' && datum['test_result']=='negative'"
+        },
+        "value":0
+        }
+        }
+
+    }]}
+    
+  
+],
+   
   "config": {
-    "view": {
-      "stroke": "transparent"
-    }
+    "view": {"stroke": "transparent"},
+    "numberFormat": ".02f"
   }
 }
